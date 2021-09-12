@@ -17,8 +17,83 @@
     </header>
     <h1 class="row title">Classes vs. IDs</h1>
     <div class="row content">
-      <div class="col-5 content-box">
-        
+      <div class="col-8 content-box">
+        <h2 class="sect-title">Index</h2>
+        <a class="txtlink" href="#css-selectors">CSS Selectors</a>
+        <br>
+        <a class="txtlink" href="#class-selectors">Class Selectors</a>
+        <br>
+        <a class="txtlink" href="#id-selectors">ID Selectors</a>
+        <br>
+        <a class="txtlink" href="#so-how-do-i-know-which-one-to-use">So How Do I Know Which One To Use?</a>
+        <br>
+        <h2 class="sect-title" id="css-selectors">CSS Selectors</h2>
+          <p>Classes and IDs are both forms of <strong>CSS Selectors</strong>. A selector is used to make applying CSS styling rules a simple and efficient process.</p>
+          <br>
+          <p>Without using a selector CSS rules have to be applied either inline for each individual element;</p>
+          <br>
+          <pre class="example-code">&lt;h2 style=&quot;color: red; font-size 24pt;&quot;&gt;An Alarming Title&lt;/h2&gt;</pre>
+          <br>
+          <br>
+          <p>Or as a blanket rule for all elements of the same type.</p>
+          <br>
+          <pre class="example-code">
+h2 {
+  color: red;
+  font-size 24pt;
+}</pre>
+          <br>
+          <br>
+          <p>Selectors can be used with a bit more finesse. By first declaring a class in your style sheet:</p>
+          <br>
+          <pre class="example-code">
+.redtext {
+  color: red;
+  font-size 24pt;
+}</pre>
+          <br>
+          <br>
+          <p>And then applying it to a specific element:</p>
+          <br>
+          <pre class="example-code">
+&lt;h2 class=&quot;redtext&quot;&gt;An Alarming Title&lt;/h2&gt;
+</pre>
+          <br>
+          <h2 class="sect-title" id="class-selectors">Class Selectors</h2>
+          <p>Now the previous example I've just given is uses a <strong>class selector</strong>.</p>
+          <br>
+          <p>Classes are great because they can be applied to multiple elements in an html page and any single element can have multiple classes. This can save you a lot of work as your web pages become more elaborate and visually complex.</p>
+          <h2 class="sect-title" id="id-selectors">ID Selectors</h2>
+          <p>So where do IDs fit into this?</p>
+          <br>
+          <p>Well the syntax for declaring and applying an <strong>ID Selector</strong> is similar enough:</p>
+          <br>
+          <pre class="example-code">
+#redtext {
+  color: red;
+  font-size 24pt;
+}
+...
+&lt;h2 id=&quot;redtext&quot;&gt;An Alarming Title&lt;/h2&gt;</pre>
+          <br>
+          <br>
+          <p>Where an ID differs is in its uniqueness. Each ID can only be applied to a single element on your page, and each element can only have a single ID.</p>
+          <h2 class="sect-title" id="so-how-do-i-know-which-one-to-use">So How Do I Know Which One To Use?</h2>
+          <p>At this stage it might begin to feel like the ID is a poor mans class. A class appears, at face value, to be vastly more versatile and efficient.</p>
+          <br>
+          <p>And for the most part this sentiment would be right. As far as application of style rules is concerned you will be better off using a class over an ID every time.</p>
+          <br>
+          <p>The true value and ID lies in uniqueness. Because only a single element on your page has that ID it means that you can create intra-page links that will jump directly to that element on the page.</p>
+          <br>
+          <p>That's how I made the index at the beginning of this blog.</p>
+          <br>
+          <pre class="example-code">
+&lta class="txtlink" href="#css-selectors"&gtCSS Selectors&lt/a&gt
+...
+&lth2 class="sect-title" id="#css-selectors"&gtCSS Selectors?&lt/h2&gt</pre>
+          <br>
+          <br>
+          <p>But even better than that an elements ID can be called by Javascript. But I need to learn more myself before I can elaborate on that.</p>
       </div>
     </div>
   </body>

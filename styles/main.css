@@ -130,3 +130,13 @@ a.txtlink:hover {
 .list {
     padding: 0 0 0 23px;
 }
+.sect-title {
+    padding: 36px 0 18px 0;
+}
+.example-code {
+    display: inline-block;
+    background-color: #142850;
+    color: #e9d57c;
+    font-size: 14pt;
+    padding: 10px;
+}
