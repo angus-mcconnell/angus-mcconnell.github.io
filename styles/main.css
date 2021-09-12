@@ -124,3 +124,9 @@ a.txtlink:hover {
     padding: 8px;
     margin: 0 0 20px 0;
 }
+.img {
+    border: 5px solid #c98724;
+}
+.list {
+    padding: 0 0 0 23px;
+}
