@@ -1,19 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&family=Roboto&display=swap');
+
+body {
+    background-color: #27496D;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
 * {
     box-sizing: border-box;
     width: 100%;
-    border: solid #5B6DCD 1px;
-}
-#hdr {
-
-}
-#ttl {
-
-}
-.txt{
-
-}
-.img{
-
+    padding: 0;
+    margin: 0;
+    border: 0;
+    /*border: solid #5B6DCD 1px;*/
 }
 .row {
     width: 100%;
@@ -54,4 +54,72 @@
 }
 .col-12 {
     width: 100%;
+}
+.header {
+    background-color: #142850;
+    color: #e9d57c;
+    font-family: 'Poller One', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18pt;
+    height: 15vh;
+    align-items: center;
+    padding: 0px 50px 0px 50px;
+}
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 1.85vw;
+    align-items: center;
+    padding: 0;
+}
+.navlink{
+    flex: 1 1 auto;
+}
+@media (min-width: 1920px) {
+    .navlink {
+        font-size: 18pt;
+    }
+}
+@media (max-width: 480px) {
+    .navlink {
+        font-size: 7pt;
+    }
+
+}
+a.navlink:link {
+    color: #e9d57c;
+}
+a.navlink:visited {
+    color: #e9d57c
+}
+a.navlink:hover {
+    color: #c0a261
+}
+.title {
+    justify-content: center;
+    font-family: 'Poller One', Verdana, Geneva, Tahoma, sans-serif;
+    color: #c98724;
+    font-size: 48pt;
+    padding: 36px 10vw 36px 10vw;
+    margin: 0;
+    text-align: center;
+}
+.content {
+    justify-content: center;
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
+    color: #070e1b;
+}
+a.txtlink:link {
+    color: #070e1b;
+}
+a.txtlink:visited {
+    color: #070e1b;
+}
+a.txtlink:hover {
+    color: #002364;
+}
+.content-box {
+    padding: 8px;
+    margin: 0 0 20px 0;
 }

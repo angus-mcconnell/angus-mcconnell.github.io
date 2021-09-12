@@ -6,36 +6,30 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
   </head>
   <body>
-    <div class="row" id="hdr">
-      <div class="col-6">
-        <h3>The Blog of Angus</h2>
+    <header class="row header">
+      <h3 class="col-6">The Blog of Angus</h3>
+      <nav class="col-6 navbar">
+        <a class="col-1 navlink" href="#welcome-page">Welcome</a>
+        <a class="col-1 navlink" href="#blog-index">Blogs</a>
+        <a class="col-1 navlink" href="#about-me">About Me</a>
+      </nav>
+    </header>
+    <h1 class="row title">Welcome To My Blog</h1>
+    <div class="row content">
+      <div class="col-5 content-box">
+        <p>Hello, hi, how are you?</p>
+        <br>
+        <p>My name is Angus, and you have found my blog.</p>
+        <br>
+        <p>I'm currently enrolled in Enspirals <a class="txtlink" href="https://devacademy.co.nz/" target="_blank">Dev Academy course</a> and will be using this blog as way to show my progress as I learn more about Web Development.</p>
+        <br>
+        <p>Since you're here, why don't you check out some of the <a class="txtlink" href="#"> things I've been working on</a>.</p>
+        <br>
+        <p>Or maybe you'd like to learn a bit more about <a class="txtlink" href="#">who I am</a>?</p>
       </div>
-      <div class="col-2">
-        <a href="#welcome-page">Welcome</a>
-      </div>
-      <div class="col-2">
-        <a href="#blog-index">Blogs</a>
-      </div>
-      <div class="col-2">
-        <a href="#about-me">About Me</a>
-      </div>
-    </div>
-    <div class="row" id="ttl">
-      <div class="col-12">
-        <h1>Welcome to My Blog</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-6" class="txt">
-        <p>Hello, hi, how are you? I'm Angus and you have found my blog.</p>
-        <p>I'm currently enrolled in Enspirals <a href="https://devacademy.co.nz/" target="_blank">Dev Academy course</a> and will be using this blog as way to show my progress as I learn more about Web Development.</p>
-        <p>Since you're here, why don't you check out some of the <a href="#"> things I've been working on</a>.</p>
-        <p>Or maybe you'd like to learn a bit more about <a href="#">who I am</a>.</p>
-      </div>
-      <div class="col-6" class="img">
+      <div class="col-5 content-box">
         <p>lets put a picture of me looking dumb here</p>
       </div>
     </div>
