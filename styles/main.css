@@ -74,6 +74,7 @@ body {
 }
 .navlink{
     flex: 1 1 auto;
+    text-align: center;
 }
 @media (min-width: 1920px) {
     .navlink {
@@ -108,16 +109,16 @@ a.navlink:hover {
     justify-content: center;
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16pt;
-    color: #070e1b;
+    color: #d4d3d3;
 }
 a.txtlink:link {
-    color: #070e1b;
+    color: #a1b9dd;
 }
 a.txtlink:visited {
-    color: #070e1b;
+    color: #a1b9dd;
 }
 a.txtlink:hover {
-    color: #002364;
+    color: #68778d;
 }
 .content-box {
     padding: 8px;
