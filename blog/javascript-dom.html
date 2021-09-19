@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript and the DOM</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+  </head>
+  <body>
+    <header class="row header">
+      <h3 class="col-6">The Blog of Angus</h3>
+      <nav class="col-6 navbar">
+        <a class="col-1 navlink" href="../index.html">Welcome</a>
+        <a class="col-1 navlink" href="../archives.html">Blogs</a>
+        <a class="col-1 navlink" href="../about-me.html">About Me</a>
+      </nav>
+    </header>
+    <h1 class="row title">Javascript and the DOM</h1>
+    <div class="row content">
+      <div class="col-8 content-box">
+        <h2 class="sect-title">The Triumvirate of the Internet</h2>
+        <p>So everything you see on modern web pages is built using a combination of three different languages.</p>
+        <br>
+        <ol class="list">
+          <li>
+            You start with HTML, your basic building block. Working with HTML is like  working with a beginners set of lego blocks. It's great for creating a basic and sturdy structures, and with enough blocks you can begin to build some pretty complex advanced structures too. But there isn't a huge variety in the blocks you have access to (they're all blocks), or the colours they come in (primary colours, if you're lucky).
+          </li>
+          <br>
+          <li>
+            Next you've got CSS. You know that bit in Wizard of Oz where Dorothy transitions from the dull black and white world of Kansas to the bright lively colourful world of Oz? That's what it's like when you start introducing CSS to your HTML page. With CSS it's like you've got a magic wand that allows you to customise your lego blocks how ever you'd like, change the shape, change the colour, change the size, you think it, CSS does it. It takes the sturdy structure of HTML and gives it flair.
+          </li>
+          <br>
+          <li>
+            Finally you've got Javascript. So thanks to HTML you've built your self a lego metropolis. And thanks to CSS you've made every building unique. But the city isn't alive. The cars sit idle in the street, the trains wait at the station, people sit frozen in time. Javascript gives is the magic tool that brings it to life. Getting a bit less fantastical with the imagery but sticking to lego, adding Javscript to a website is like integrating a lego Mindstorm kit into your robot sculpture to make it an moving actual robot.
+          </li>
+        </ol>
+        <h2 class="sect-title">Control the Flow</h2>
+        <p>Simply put control flow is the order in which your Javascript code is read and executed. At its most basic this a simple linear process, read from top to bottom, or beginning to end. Except sometimes the code will loop back on itself to read the same part multiple times.</p>
+        <br>
+        <p>Think of a simple workout routine:</p>
+        <br>
+        <ul class="list">
+          <ol>10 push ups</ol>
+          <ol>20 crunches</ol>
+          <ol>15 squats</ol>
+        </ul>
+        <br>
+        <p>Writing that out as pseudo code would look like this:</p>
+        <br>
+        <pre class="example-code">
+loop (10 times) {
+  do a push-up;
+}
+loop (20 times) {
+  do a crunch;
+}
+loop (15 times) {
+  do a squat;
+}</pre>
+        <br>
+        <br>
+        <p>Your computer will go through this code one line at a time from top to bottom. Except when it meets a loop, then it will run the loop as many times as commanded before it moves to the next line of code.
+        </p>
+        <h2 class="sect-title">Dominating The DOM</h2>
+        <p>The DOM is a way top map out a web-page and see how it all fits together. You can visualise it like a family tree, at the top of the tree, the progenitor, is "document". Then branching below its children "head" and "body". "Body" is where the meat and potatoes of a web page is and it has many children, and those children have their own children and so on ad infinitum.</p>
+        <br>
+        <p>By combining your knowledge of the DOM and Javascript you can access, edit, and rearrange the page as we wish. You can create commands that will alter all page elements of the same class. Or you can move elements to different parts of your page. You can change the CSS rules with a stroke of your keys. Javscript gives you the tools, but its the DOM that lets you know how to aim them.</p>
+        <h2 class="sect-title">Arrays and Objects</h2>
+        <p>Arrays and Objects are cousins of a sort, almost but not quite alike. Both of them act as containers that can store a collection of data. The difference is in how that information is stored and retrieved.</p>
+        <br>
+        <p>Maybe I want to store a set of the first 5 numbers of the Fibonacci sequence (1, 2, 3, 5, 8), for that I'd use an array. Then if I wanted to know what the 4th number from the Fibonacci sequence is I'd just access the 4th entry in the array and I'd get a value of 5. Relatively simple.</p>
+        <br>
+        <p>Objects are the same as Arrays in that they contain within them multiple entries for different values. But unlike an Array that organises them in a set order for easy access, Objects are organised by labelling their data. This makes them better for storing more abstract values, like a persons contact details.</p>
+        <br>
+        <pre class="example-code">
+angusContactDetails {
+  name: 'Angus';
+  age: '33 and counting';
+  mobile: '021-youalmosthadme';
+  email: 'notmyrealemail@gmail.com';
+  }</pre>
+        <br>
+        <br>
+        <p>So to retrieve a persons mobile phone number you simply have to ask the object (angusContactDetails) for value of the mobile property. In this case that would return "021-youalmosthadme".</p>
+        <h2 class="sect-title">The Function of Functions</h2>
+        <p>Remember Fantasia, that Disney anthology film set to pieces of classical music? The most famous of the different segments is "The Sorcerer's Apprentice" where Mickey Mouse tries to shirk his duties as an apprentice by enchanting a broom to fetch buckets of water for him.</p>
+        <br>
+        <p>Well when Mickey is enchanting the broom you can think of that as creating a function. Written in pseudo code it might look something like this:</p>
+        <br>
+        <pre class="example-code">
+function getWater() {
+  grab buckets;
+  go to well;
+  fill buckets from well;
+  go to pool;
+  empty buckets into pool;
+}</pre>
+        <br>
+        <br>
+        <p>Now that Mickey has created his function he just needs to call it with:</p>
+        <br>
+        <pre class="example-code">
+broom.getWater()
+</pre>
+        <br>
+        <br>
+        <p>And the broom will carry out the function of getWater().</p>
+        <br>
+        <p>Of course you need to this more than a couple of times to fill the pool, and who can be bothered to type out getWater() over and over. This is where loops come in. A loop allows you to cycle through a series of commands multiple times for a set number of times.</p>
+        <br>
+        <pre class="example-code">
+loop (while pool is not full) {
+  getWater();
+}
+</pre>
+        <br>
+        <br>
+        <p>Notice how we don't have to write out all the steps of getWater() again? That's because  we've already written it as a function, and now because we've put it in a loop the function will keep being called until the pool is full.</p>
+        <br>
+        <p>Unfortunately for Mickey he forgot to put an end condition on his loop so the broom just keeps filling it with water until the whole room is flooded...</p>
+      </div>
+    </div>
+  </body>
+</html>
