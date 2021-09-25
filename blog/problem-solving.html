@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Problem Solving</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+  </head>
+  <body>
+    <header class="row header">
+      <h3 class="col-6">The Blog of Angus</h3>
+      <nav class="col-6 navbar">
+        <a class="col-1 navlink" href="../index.html">Welcome</a>
+        <a class="col-1 navlink" href="../archives.html">Blogs</a>
+        <a class="col-1 navlink" href="../about-me.html">About Me</a>
+      </nav>
+    </header>
+    <h1 class="row title">Problem Solving</h1>
+    <div class="row content">
+      <div class="col-8 content-box">
+        <h2 class="sect-title">Why are Problem Solving Skills Important?</h2>
+        <p>
+          Problem solving is arguably the most important suite of "meta" skills that any programmer can develop. Why? Because regardless of the language being used, or the kind of program being developed, you can always count on running into unexpected issues. And the true measure of a programmer is how efficiently adnd effectively you can overcome them.
+        </p>
+        <h2 class="sect-title">What are they?</h2>
+        <p>
+          Because the problems we encounter can be many and varied, so too must be the suite of skills used to solve them.
+        </p>
+        <br>
+        <ul class="list">
+          <li><b>Pseudocode:</b> Writing out the logic steps of what you want/need your code to do. Once you understand what you want your code to do, then you can work on figuring out the semantics of the language.</li>
+          <br>
+          <li><b>Trying something:</b> Good old trial and error. It might not always be the most effecient way to solve a problem, but it can often yield unexpected results.</li>
+          <br>
+          <li><b>Rubber ducky method:</b> Describing the code and what it does line by line to a real or imaginary person. Doing this can help spot incongruities between what the code is supposed to do and what it's written to do.</li>
+          <br>
+          <li><b>Reading error messages:</b> Error messages might not always be easy to read or understand, but they are trying to tell you what's wrong.</li>
+          <br>
+          <li><b>Console.logging:</b> console.log is very versatile function. You can use it throught out your code to report back on the value of variables before and after they are altered by functions to confirm that your code is working as intended.</li>
+          <br>
+          <li><b>Googling:</b> The great equaliser. 9 times out of 10 someone has encountered your problem before, solved it, and then posted the solution somewhere online. When in doubt, Google it.</li>
+          <br>
+          <li><b>Asking your peers for help:</b> Your peers are often working on the same problems as you. Even if they haven't solved it yet either you can at least work on it together.</li>
+          <br>
+          <li><b>Asking coaches for help:</b> Same idea as behind asking your peers, but in this case they already have the answers because they made the questions. They should be able to point you in the right direction.</li>
+          <br>
+          <li><b>Improving your process with reflection:</b> Taking the time to relfect on your problem solving process can p you get more effecient at the process. And if done when stuck on a problem it can help you gain insight to what you have, and more importantly, what you haven't tried.</li>
+        </ul>
+        <h2 class="sect-title">Two Examples; Elegant and Frustrating</h2>
+        <p>
+          This week saw us running through a series of Javascript "katas". Both of these examples relate to the Gradebook exercise. At the start of the exercise we were given an array of student names, and an array of grade scores for the students. We were then asked to compile these two arrays into an object (gradebook) with the names action as the properties and scores as the property values.
+        </p>
+        <br>
+        <p>
+          The obvious solution is just to create the object by manually typing out the properties and values. But I figured that since they were already in arrays that I could get a little fancy with it and create a for loop that cycles through both arrays and applies them to the gradebook object. This didn't save me a great amount of time compared to doing it manually, but I liked getting to flex my brain muscles a little bit and automate a menial process. It was, I felt, an elegant solution.
+        </p>
+        <br>
+        <p>
+          Then at the end of the exercise, with the final task, I hit a wall. We were tasked with creating a function called enterScores and it was not even remotely clear to me what it was suposed to do. After taking a break to fetch a cup of tea I came back to the problem and applied the rubber ducky method to the testing code, trying to understand what it wanted the function to do.
+        </p>
+          <br>
+        <p>
+          My break through came when I realised that the test code was re-initialising the gradebook object that I'd already created, and was then using it and the student names, and grade score arrays as arguments for the enterScores function. It wanted me to create a function that automated the process of creating the gradebook object, just like I had already done at the start of the exercise unprompted. From there it was simply copying and pasting my already existing code into the function. Voila.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
