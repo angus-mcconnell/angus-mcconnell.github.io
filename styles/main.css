@@ -76,17 +76,7 @@ body {
     flex: 1 1 auto;
     text-align: center;
 }
-@media (min-width: 1920px) {
-    .navlink {
-        font-size: 18pt;
-    }
-}
-@media (max-width: 480px) {
-    .navlink {
-        font-size: 7pt;
-    }
 
-}
 a.navlink:link {
     color: #e9d57c;
 }
@@ -139,4 +129,19 @@ a.txtlink:hover {
     color: #e9d57c;
     font-size: 14pt;
     padding: 10px;
+}
+@media screen and (min-width: 1200px) {
+    .navlink {
+        font-size: 18pt;
+    }
+}
+@media screen and (max-width: 768px) {
+    .navlink {
+        font-size: 7pt;
+    }
+}
+@media screen and (max-width: 320px) {
+    .navlink {
+        font-size: 5pt;
+    }
 }
